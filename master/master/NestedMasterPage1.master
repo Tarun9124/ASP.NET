@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage1.master.cs" Inherits="master.NestedMasterPage1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style9 {
+            width: 746px;
+            height: 163px;
+        }
+        .auto-style10 {
+            width: 102px;
+        }
+    </style>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <table class="auto-style9">
+        <tr>
+            <td colspan="2" style="border-color: #000000; border-style: double;">Name : Tarun Prajapati</td>
+        </tr>
+        <tr>
+            <td class="auto-style10" style="border-style: double; border-color: #000000; background-color: #C0C0C0">ER No.:</td>
+            <td style="border-style: double; border-color: #000000; background-color: #C0C0C0">206120316008</td>
+        </tr>
+        <tr>
+            <td class="auto-style10" style="border-style: double; border-color: #000000; background-color: #C0C0C0">E-mail :</td>
+            <td style="border-style: double; border-color: #000000; background-color: #C0C0C0">tarun.prajapati@gmail.com</td>
+        </tr>
+    </table>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    <asp:Button ID="Button6" runat="server" Height="31px" OnClick="Button6_Click" Text="Gift" Width="96px" />
+</asp:ContentPlaceHolder>
+</asp:Content>
+

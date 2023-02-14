@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="master.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 864px;
+            height: 450px;
+        }
+        .auto-style3 {
+            height: 76px;
+            width: 673px;
+        }
+        .auto-style5 {
+            height: 76px;
+            width: 162px;
+        }
+        .auto-style6 {
+            width: 162px;
+        }
+        .auto-style7 {
+            width: 673px;
+        }
+        .auto-style8 {
+            height: 76px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1" style="border-style: dashed; border-width: medium; text-align: left;">
+                <tr>
+                    <td style="text-align: center; background-color: #999966;" class="auto-style8" colspan="2">&nbsp;<asp:Label ID="Label2" runat="server" BackColor="#FF3300" Height="24px" Text="Coders_territory" Width="231px" BorderStyle="Double"></asp:Label>
+                        </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; background-color: #FF9900;" class="auto-style5">Menu&nbsp;&nbsp;</td>
+                    <td style="text-align: center; background-color: #FF9900; " class="auto-style3">
+                        <asp:Button ID="Button2" runat="server" Height="29px" Text="Home" Width="105px" BackColor="Yellow" OnClick="Button2_Click" />
+&nbsp;<asp:Button ID="Button3" runat="server" Height="29px" Text="Log-In" Width="105px" BackColor="Yellow" OnClick="Button3_Click" />
+&nbsp;<asp:Button ID="Button4" runat="server" Height="29px" Text="Resume" Width="105px" BackColor="Yellow" OnClick="Button4_Click" />
+&nbsp;<asp:Button ID="Button5" runat="server" Height="29px" Text="Help" Width="105px" BackColor="Yellow" OnClick="Button5_Click" />
+                    </td>
+                </tr>
+                <tr>
+                   <td style="text-align: center; background-color: #0000FF; color: #FFFF00;" class="auto-style6"> 
+                       <asp:Panel ID="Panel2" runat="server" GroupingText="Choice " BackColor="Lime">
+                           <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="True" BackColor="Blue" BorderColor="Black" BorderStyle="Double" Height="243px" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" Width="181px" ForeColor="White">
+                               <asp:ListItem>Programming</asp:ListItem>
+                               <asp:ListItem>             Security</asp:ListItem>
+                               <asp:ListItem>       Web Design</asp:ListItem>
+                               <asp:ListItem>             Android</asp:ListItem>
+                               <asp:ListItem>          Graphics</asp:ListItem>
+                           </asp:RadioButtonList>
+                       </asp:Panel>
+                    </td>
+                   <td style="border: medium solid #FF0000; text-align: center; background-color: #00FFFF;" class="auto-style7"> 
+                       <br />
+                       <br />
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                       <asp:Panel ID="Panel1" runat="server">
+                       </asp:Panel>
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; background-color: #999966; color: #FF0066;" class="auto-style6">
+                        <asp:Panel ID="Panel3" runat="server" BackColor="#999966" GroupingText="Review">
+                        <asp:RadioButtonList ID="RadioButtonList2" runat="server" Height="201px" Width="174px" BorderStyle="Double" BackColor="Yellow">
+                            <asp:ListItem>     Useless</asp:ListItem>
+                            <asp:ListItem>             Bad</asp:ListItem>
+                            <asp:ListItem>Average</asp:ListItem>
+                            <asp:ListItem>     Good</asp:ListItem>
+                            <asp:ListItem Value="     Excellent">    Excellent</asp:ListItem>
+                        </asp:RadioButtonList>
+                        </asp:Panel>
+                        <br />
+&nbsp;<asp:Button ID="Button1" runat="server" BackColor="Yellow" Height="29px" OnClick="Button1_Click" Text="Submit" Width="71px" />
+                    </td>
+                    <td style="border: medium solid #FF0000; text-align: center; background-color: #999966;" class="auto-style7">&nbsp;<asp:Label ID="Label4" runat="server" ForeColor="Black" Height="33px" Width="645px"></asp:Label>
+&nbsp;<br />
+&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebForm2.aspx">About Us</asp:HyperLink>
+                        <br />
+                        <br />
+                        <br />
+                        <asp:Label ID="Label5" runat="server" BackColor="Yellow" ForeColor="Red" Text="Creator : Tarun(206120316008)"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </form>
+</body>
+</html>
